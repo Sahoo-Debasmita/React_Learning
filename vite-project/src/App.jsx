@@ -1,10 +1,13 @@
 
-
+import Hello from "./hello"
 
 function App() {
 
   return (
-<h1>React with vite</h1>
+    <>
+<Hello/>
+<h4>Inserted another element</h4>  
+    </>
   )
 }
 
