@@ -1,12 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Layout from './Layout'
-import Home from './Components/Home/Home'
-import About from './Components/About/About'
-import Contact from './Components/Contact/Contact'
-import User from './Components/User/User'
-import Github, { githubLoaderInfo } from './Components/Github/Github'
+import App from './App'
+import {Home,About,Contact,User,Github} from './Components/export'
+import  { githubLoaderInfo } from './Components/Github/Github'
 import { BrowserRouter, Route, Router, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 
 // Method-1 of creating router
@@ -33,7 +30,7 @@ import { BrowserRouter, Route, Router, RouterProvider, createBrowserRouter, crea
 // Method-2 of creating router
 const router=createBrowserRouter(
   createRoutesFromElements(
- <Route path='/' element={<Layout></Layout>}>
+ <Route path='/' element={<App></App>}>
 <Route path='' element={<Home></Home>}></Route>
 <Route path='about' element={<About></About>}></Route>
 <Route path='Contact' element={<Contact></Contact>}></Route>
